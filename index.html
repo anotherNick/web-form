@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div id="splash">
+            <div id="ribbon">
+                <img src="./media/steimling-logo.png" alt="Logo image of a microchip with skull">
+                <span class="russo-one-regular">
+                   STEIMLING 
+                </span>
+            </div>
+            <div id="splash-footer">
+                Photo by <a href="https://unsplash.com/@mikehindle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Hindle</a> on <a href="https://unsplash.com/photos/symmetrical-abstract-pattern-of-modern-skyscrapers-against-sky-TCCBk_tk3hE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+        <div id="form-wrapper" class="roboto">
+            <div id="form-header">
+                <p>
+                    At Steimling Technologies Inc., we specialize in reasoning models to release users from the frustrating process of cognition. Join today to feel the burden of discernment and decision lifted from your aching shoulders. Never again labor under the tyrannical yolk of critical thought!
+                </p>
+                <p id="pitch">
+                    Sign up to have the world of your <em>dreams</em> delivered to your inbox.
+                </p>
+            </div>
+            <div id="form-body">
+                <h2>Let's do this! </h2>
+                <form id="definitely-not-a-soul-contract">
+                    <div id="form-column-1">
+                        <label for="user-first-name">First Name</label>
+                        <input type="text" name="user-first-name" maxlength="25" placeholder="Johann">
+                        <label for="user-email">Email</label>
+                        <input type="email" name="user-email" placeholder="faust@witcheskitchen.org">
+                        <label for="user-password">Password</label>
+                        <label for="user-password-confirm">Confirm Password</label>
+                        <input type="password" name="user-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <span class="form-input-error">Password must contain at least one number, one uppercase and lowercase letter, and 8 or more characters.</span>
+                    </div>
+                    <div id="form-column-2">
+                        <label for="user-last-name">Last Name</label>
+                        <input type="text" name="user-last-name" maxlength="25" placeholder="Faust">
+                        <label for="user-phone">Phone Number</label>
+                        <input type="tel" name="user-phone" placeholder="(1)999-9999">
+                        <label for="user-password-confirm">Confirm Password</label>
+                        <input type="password" name="user-password-confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <span class="form-input-error">Password must contain at least one number, one uppercase and lowercase letter, and 8 or more characters.</span>
+                    </div>
+                </form>
+            </div>
+            <div id="form-footer">
+                <button form="definitely-not-a-soul-contract">Create Account</button>
+                <span id="login-option">Already have an account? Log In</span>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>      

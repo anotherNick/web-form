@@ -1,0 +1,251 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+
+/* :root {
+
+    --black: #142030;
+    --primary-light: #FF5C8D;
+    --primary-dark: #732553;
+    --secondary-light: #85A3B2;
+    --secondary-dark: #1E3442;
+    --highlight: #E9D8C8;
+
+} */
+
+:root {
+
+    --black: #142030;
+    --primary-light: #ffb162;
+    --primary-dark: #a35139;
+    --secondary-light: #2c3b4d;
+    --secondary-dark: #1B2632;
+    --tertiary-light: #eee9df;
+    --tertiary-dark: #E0D9CC;
+
+}
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+
+    background-color: var(--primary-dark);
+
+}
+
+a {
+
+    color: var(--primary-dark);
+
+}
+
+a:visited {
+
+    color: var(--primary-light);
+
+}
+
+h2 {
+
+    margin-bottom: 16px;
+    color: var(--secondary-dark);
+
+}
+
+input {
+
+    display: block;
+    margin-bottom: 32px;
+    padding: 8px;
+    border: 1px solid var(--secondary-light);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 300px;
+
+}
+
+input:focus, input:focus-visible {
+
+        border-color: var(--primary-dark);
+        outline: none;
+        box-shadow: 5px 5px 5px var(--primary-light);
+
+}
+
+input:invalid, input:focus:invalid, input:focus-visible:invalid {
+
+    border: 2px solid red;
+    outline:none;
+
+}
+
+input:invalid + .form-input-error {
+
+    display: block;
+
+}
+
+label {
+
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 1rem;
+
+}
+
+.container {
+
+    width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+
+    box-shadow: 0 0 16px black;
+
+}
+
+#splash {
+
+    background: url("./media/mike-hindle-bg.jpg") top left;
+    opacity: .8;
+    border-right: 4px solid black;
+    
+    position: relative;
+    flex: 0 0 33.33%;
+
+}
+
+#ribbon {
+
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgba(255, 177, 98, .6);
+    opacity: .9;
+    position: absolute;
+    top:218px;
+    width: 100%;
+    padding: 16px;
+
+}
+
+#ribbon > img {
+
+    width: 40%;
+
+}
+
+#ribbon > span {
+
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+#splash-footer {
+
+    background-color:  black;
+    color: var(--tertiary-light); 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+
+}
+
+#form-wrapper {
+
+    background-color: var(--tertiary-dark);
+    flex: 0 0 66.66%;
+
+}
+
+#form-header {
+
+    color: var(--secondary-light);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 135px 48px 0px 48px;
+    height: 427px;
+
+}
+
+#form-header p{
+
+    margin-bottom: 48px;
+    width: 55ch;
+
+}
+
+#pitch {
+
+    color: var(--primary-dark);
+
+}
+
+#form-body {
+
+    background-color: var(--tertiary-light);
+    box-shadow: 0 5px 5px var(--primary-dark);
+    padding: 16px 48px;
+
+}
+
+form {
+
+    display: flex;
+    margin-bottom: 16px;
+    gap: 80px;
+
+}
+
+#form-footer {
+
+    padding: 48px;
+
+}
+
+button {
+
+    padding: 12px 48px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    background-color: var(--secondary-light);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px var(--primary-dark);
+
+}
+
+#login-option {
+
+    display: block;
+    margin-top: 32px;
+    font-size: 1.25rem;
+
+}
+
+.form-input-error {
+
+    display: none;
+    color: red;
+    font-weight: 200;
+    font-size: .8rem;
+    max-width: 300px;
+
+}
