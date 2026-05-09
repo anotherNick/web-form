@@ -82,6 +82,7 @@ input:focus, input:focus-visible {
         border-color: var(--primary-dark);
         outline: none;
         box-shadow: 5px 5px 5px var(--primary-light);
+        transition: box-shadow .25s;
 
 }
 
