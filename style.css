@@ -62,13 +62,15 @@ h2 {
 
     margin-bottom: 16px;
     color: var(--secondary-dark);
+    font-size: 1.5rem;
+    font-weight: 600;
 
 }
 
 input {
 
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     padding: 8px;
     border: 1px solid var(--secondary-light);
     border-radius: 5px;
@@ -137,7 +139,7 @@ label {
     background-color: rgba(255, 177, 98, .6);
     opacity: .9;
     position: absolute;
-    top:218px;
+    top: 178px;
     width: 100%;
     padding: 16px;
 
@@ -180,9 +182,9 @@ label {
 
     color: var(--secondary-light);
     font-size: 1.5rem;
-    font-weight: 700;
-    padding: 135px 48px 0px 48px;
-    height: 427px;
+    font-weight: 500;
+    padding: 105px 48px 0px 48px;
+    height: 387px;
 
 }
 
@@ -210,14 +212,13 @@ label {
 form {
 
     display: flex;
-    margin-bottom: 16px;
     gap: 80px;
 
 }
 
 #form-footer {
 
-    padding: 48px;
+    padding: 32px 48px;
 
 }
 
